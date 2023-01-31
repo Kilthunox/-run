@@ -2,12 +2,12 @@
 #include <fstream>
 #include <string>
 #include <map>
-#include <bits/stdc++.h>
- 
+#include <iostream>
+
+
 const std::filesystem::path HOME_DIR {std::string("/home/") + std::getenv("USER")};
 const std::string CONFIG_DIR {".fn/"};
 std::map<std::string, std::string> funcs {};
-
 
 
 std::string read_file(const std::string &file_path) {
@@ -46,17 +46,21 @@ void call_func(std::string &func_id) {
 
 int main(int argc, char** argv) {
 	if (argc > 1) {
-		std::string func_id {argv[1]};
+		std::string arg {argv[1]};
 		load_funcs(HOME_DIR);
 		load_funcs(std::filesystem::current_path());
-		if (funcs.find(func_id) != funcs.end()) {
-			std::string command = funcs[func_id];
+		if (arg == "-l" || arg == "--list") {
+			for (auto const& [func_id, func] : funcs) {
+				std::cout << func_id << ": " << func << std::endl; 
+			} 
+		} else if (funcs.find(arg) != funcs.end()) {
+			std::string command;
 			for (int i=2; i < argc; ++i) {
 				command += std::string(" ") + argv[i];
 			}
 			std::system(command.c_str());
 		} else {
-			std::cout << "no function name " << func_id << " exists." << std::endl;
-		}
-	}
+			std::cout << arg << ": function not found" << std::endl;
+		} 
+	} 
 }
