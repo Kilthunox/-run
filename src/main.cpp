@@ -54,7 +54,7 @@ int main(int argc, char** argv) {
 				std::cout << func_id << ": " << func << std::endl; 
 			} 
 		} else if (funcs.find(arg) != funcs.end()) {
-			std::string command;
+			std::string command {funcs[arg]};
 			for (int i=2; i < argc; ++i) {
 				command += std::string(" ") + argv[i];
 			}
