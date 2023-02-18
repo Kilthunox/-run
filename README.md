@@ -12,9 +12,9 @@ g++ src/*.cpp -std=c++17 -o run
 
 
 # Install
-1. Move the newly compiled run.64 executable to where you want the application to live in it's own directory.
+1. Move the newly compiled run executable to where you want the application to live in it's own directory.
 ```
-mv run.64 ~/Applications/run/run
+mv run ~/Applications/run/run
 ```
 
 2. Expose the `run` directory to `PATH` in the `.bashrc` file.
