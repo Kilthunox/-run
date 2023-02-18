@@ -7,14 +7,14 @@ run is a simple CLI program written in c++ for Linux to macro shell scripts to a
 # Compile
 Compile from source using g++.
 ```
-g++ src/*.cpp -std=c++17 -o run.64
+g++ src/*.cpp -std=c++17 -o run
 ```
 
 
 # Install
 1. Move the newly compiled run.64 executable to where you want the application to live in it's own directory.
 ```
-mv run.64 ~/Applications/run/run.64
+mv run.64 ~/Applications/run/run
 ```
 
 2. Expose the `run` directory to `PATH` in the `.bashrc` file.
