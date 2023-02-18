@@ -1,6 +1,7 @@
 # run
 
 run is a simple CLI program written in c++ for Linux to macro shell scripts to aid in workflow automation.
+see [run-scripts](https://github.com/Kilthunox/run-scripts) for example automations.
 
 
 
