@@ -1,0 +1,2 @@
+export PATH=/home/kalen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/kalen/.dotnet/tools:/home/kalen/Applications/run/:~/Applications/fn/
+export PATH=/home/kalen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/kalen/.dotnet/tools:/home/kalen/Applications/run/:~/Applications/fn/

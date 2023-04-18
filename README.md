@@ -1,6 +1,6 @@
-# run
+# fn
 
-run is a simple CLI program written in c++ for Linux to macro shell scripts to aid in workflow automation.
+fn is a simple CLI program written in c++ for Linux to macro shell scripts to aid in workflow automation.
 see [run-scripts](https://github.com/Kilthunox/run-scripts) for example automations.
 
 
@@ -8,22 +8,22 @@ see [run-scripts](https://github.com/Kilthunox/run-scripts) for example automati
 # Compile
 Compile from source using g++.
 ```
-g++ src/*.cpp -std=c++17 -o run
+g++ src/*.cpp -std=c++17 -o fn
 ```
 
 
 # Install
 1. Move the newly compiled run executable to where you want the application to live in it's own directory.
 ```
-mv run ~/Applications/run/run
+mv run ~/Applications/fn/fn
 ```
 
-2. Expose the `run` directory to `PATH` in the `.bashrc` file.
+2. Expose the `fn` directory to `PATH` in the `.bashrc` file.
 
 `~/.bashrc`
 ```
 ...
-export PATH=$PATH:~/Applications/run/
+export PATH=$PATH:~/Applications/fn/
 ```
 
 
